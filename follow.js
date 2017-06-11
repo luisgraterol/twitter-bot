@@ -5,7 +5,7 @@ var T = new Twitter(config);
 // Set up your search parameters:
 var params = {
     q: '#starwars',
-    count: 10,
+    count: 100,
     result_type: 'recent',
     lang: 'en'
 }
@@ -18,7 +18,7 @@ T.get('search/tweets', params, function(err, data, response) {
 
             T.post('friendships/create', {screen_name}, function(error, response) {
                 if (!error)
-                    console.log(screen_name," **FOLLOWED**");
+                    console.log("Followed: ",screen_name);
                 else
                     console.log(error);
             })

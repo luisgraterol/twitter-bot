@@ -4,9 +4,8 @@ var T = new Twitter(config);
 
 // Set up your search parameters:
 var params = {
-    q: '#starwars',
-    count: 100,
-    result_type: 'recent',
+    q: '#thedarkside',
+    count: 10,
     lang: 'en'
 }
 
@@ -21,7 +20,7 @@ T.get('search/tweets', params, function(err, data, response) {
                 if(!err) { // If there is no error, log the url of the tweet:
                     let username = response.user.screen_name;
                     let tweetId = response.id_str;
-                    console.log("Retweeted: ",`${tweetId} by ${username}`)
+                    console.log("Retweeted: ",`${tweetId} by ${user}`)
                 }
                 else { // Else, log the error produced.
                     console.log(err[0].message);
