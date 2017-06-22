@@ -5,6 +5,6 @@ but I intend to keep adding to it so that it can do more interesting stuff.
 
 Fill free to check out the code!
 
-If you like it, don't forget to hit the star button!
+#### If you like it, don't forget to hit the star button!
 
-Also, [here](http://luisgraterol.github.io) is a link to my personal webpage.
+#### Also, [here](http://luisgraterol.github.io) is a link to my personal webpage.
